@@ -7,3 +7,10 @@ const students = [
 ];
 
 // เริ่มเขียนโค้ดตรงนี้
+const moreThanFifty = students
+.filter(student => student.score > 50)
+.map((student) => {
+  return student.score += (student.score * (10/100))
+})
+.reduce((acc,cur)=> acc + cur,0)
+console.log(moreThanFifty)
