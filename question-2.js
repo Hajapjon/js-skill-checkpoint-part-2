@@ -13,4 +13,4 @@ const moreThanFifty = students
   return student.score += (student.score * (10/100))
 })
 .reduce((acc,cur)=> acc + cur,0)
-console.log(moreThanFifty)
+console.log(`Total score is ${moreThanFifty}`)
